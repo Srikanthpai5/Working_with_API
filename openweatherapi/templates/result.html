@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background-color: #252121; height: 100vh">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+
+                <div class="card border-0 p-3 shadow-sm text-center">
+                    
+
+                    <h2 style="color: rgb(71, 71, 67);">Current Weather For <br> {{ city }} , <b>{{ country }}</b>.</h2><br><hr>
+                    <h5><b>Temperature:</b> {{ temp }} C</h5>
+                    <h5><b>Humidity:</b> {{ humidity }} %</h5>
+                    <h5><b>Wind Speed:</b> {{ wind_speed }} kmph</h5>
+                    <h6><b> Min Temperature:</b> {{ min_temp }} C</h6>
+                    <h6><b> Max Temperature:</b> {{ max_temp }} C</h6>
+                    <br>
+
+                    <a class="btn btn-info btn-block" href=#>Again!</a>
+                    <!-- <a href="index.html">Again!</a> -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
