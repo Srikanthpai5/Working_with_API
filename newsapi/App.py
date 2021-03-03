@@ -1,4 +1,3 @@
-# 71dadffaa9d34fe784f6b8b373389fb8
 # https://newsapi.org/docs/client-libraries/python
 
 
@@ -10,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    newsapi = NewsApiClient(api_key="71dadffaa9d34fe784f6b8b373389fb8")
+    newsapi = NewsApiClient(api_key="###")
 
     topheadlines = newsapi.get_top_headlines(sources="bbc-news,the-verge,fox-news,cnn",
                                                  language='en')
